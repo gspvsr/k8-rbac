@@ -26,24 +26,24 @@ roleRef:
   kind: Role
   name: roboshop-admin
   apiGroup: rbac.authorization.k8s.io
-# ---
-# apiVersion: v1
-# data:
-#   mapRoles: |
-#     - groups:
-#       - system:bootstrappers
-#       - system:nodes
-#       rolearn: arn:aws:iam::076583563305:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-F90wd24m02pO
-#       username: system:node:{{EC2PrivateDNSName}}
-#   mapUsers: |
-#     - groups:
-#       - roboshop-admin
-#       userarn: arn:aws:iam::076583563305:user/ramesh
-#       username: ramesh
-# kind: ConfigMap
-# metadata:
-#   creationTimestamp: "2024-03-02T08:03:55Z"
-#   name: aws-auth
-#   namespace: kube-system
-#   resourceVersion: "1271" 
-#   uid: 09e216ea-5669-4838-a5ab-5cf5f75fef6b
+---
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::076583563305:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-F90wd24m02pO
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - groups:
+      - roboshop-admin
+      userarn: arn:aws:iam::430365015860:user/ramesh
+      username: ramesh
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-03-02T08:03:55Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1271" 
+  uid: 09e216ea-5669-4838-a5ab-5cf5f75fef6b
