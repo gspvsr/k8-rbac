@@ -33,7 +33,7 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::076583563305:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-F90wd24m02pO
+      rolearn: arn:aws:iam::430365015860:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-76ou99dk7bW5
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
@@ -42,8 +42,8 @@ data:
       username: ramesh
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-03-02T08:03:55Z"
+  creationTimestamp: "2024-03-02T22:31:40Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1271" 
-  uid: 09e216ea-5669-4838-a5ab-5cf5f75fef6b
+  resourceVersion: "1180"
+  uid: 6d170f5b-42f8-4fc0-853a-166e5a2e0508
