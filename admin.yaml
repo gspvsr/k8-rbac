@@ -57,17 +57,17 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::430365015860:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-76ou99dk7bW5
+      arn:aws:iam::612400101384:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-w4Y5adK9efAg
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
       - roboshop-admin
-      userarn: arn:aws:iam::430365015860:user/ramesh
+      userarn: arn:aws:iam::612400101384:user/ramesh
       username: ramesh
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-03-02T22:31:40Z"
+  ccreationTimestamp: "2024-03-04T03:19:26Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1180"
-  uid: 6d170f5b-42f8-4fc0-853a-166e5a2e0508
+  resourceVersion: "1350"
+  uid: 2c5b329a-4436-48e6-bd45-982abd4e9d5a
