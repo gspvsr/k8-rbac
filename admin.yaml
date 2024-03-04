@@ -57,7 +57,7 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      arn:aws:iam::612400101384:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-w4Y5adK9efAg
+      rolearn: arn:aws:iam::612400101384:role/eksctl-eks-spot-cluster-nodegroup--NodeInstanceRole-w4Y5adK9efAg
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
